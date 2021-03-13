@@ -1,0 +1,14 @@
+193.169.155.1 visited the site 3 times
+193.169.155.2 visited the site 2 times
+193.169.155.12 visited the site 1 times
+193.169.155.32 visited the site 1 times
+193.169.155.54 visited the site 1 times
+193.169.155.133 visited the site 3 times
+On Monday the number of visits 3
+On Tuesday the number of visits 1
+On Wednesday the number of visits 1
+On Thursday the number of visits 1
+On Friday the number of visits 3
+On Saturday the number of visits 0
+On Sunday the number of visits 2
+Most popular visiting time (hour) 22 at this time the number of visits was 2 times
