@@ -1,27 +1,21 @@
-import sqlite3
+import math
 
-try:
-    sqlite_connection = sqlite3.connect('Tourism.db')
-    cursor = sqlite_connection.cursor()
-    print("База данных создана и успешно подключена к SQLite")
+class Quad:
+    pos = []
 
-    sqlite_select_query = "select sqlite_version();"
-    cursor.execute(sqlite_select_query)
-    record = cursor.fetchall()
-    print("Версия базы данных SQLite: ", record)
-    sqlite_create_table_query = '''CREATE TABLE sqlitedb_developers (
-                                    id INTEGER PRIMARY KEY,
-                                    name TEXT NOT NULL,
-                                    email text NOT NULL UNIQUE,
-                                    joining_date datetime,
-                                    salary REAL NOT NULL);'''
+    def __init__(self):
+        print("Введите значения координат квадрата (x, y):")
+        for i in range(0, 4):
+            self.pos.append(int(input()))
 
-    cursor.close()
+    def output(self):
+        print(self.pos)
 
-except sqlite3.Error as error:
-    print("Ошибка при подключении к sqlite", error)
+    def square(self):
+        return pow((abs(self.pos[0] - self.pos[4]) + abs(self.pos[1] - self.pos[3])), 2)
 
-finally:
-    if (sqlite_connection):
-        sqlite_connection.close()
-        print("Соединение с SQLite закрыто")
+class Pentagon:
+    pos = []
+
+    def __init__(self):
+        print("Введите знач")
